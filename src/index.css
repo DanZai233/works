@@ -4,6 +4,8 @@
   --font-serif:
     "Noto Serif SC", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  @variant dark (&:where([data-scheme="dark"], .dark));
 }
 
 :root[data-scheme="light"] {
