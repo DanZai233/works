@@ -93,9 +93,9 @@ export default function App() {
             一只小羊羔的窝
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-gray-900 mb-6 tracking-tight dark:text-white">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-gray-900 mb-6 tracking-tight" style={{ color: 'var(--title-color)' }}>
             所作，
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-300 dark:from-rose-500 dark:to-amber-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-orange-300">
               所为
             </span>
           </h1>
