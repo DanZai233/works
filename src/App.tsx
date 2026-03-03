@@ -66,6 +66,14 @@ const projects = [
     githubUrl: "https://github.com/DanZai233/Record-ME",
     tags: ["Note", "Record", "Lightweight"],
     color: "text-orange-600 border-orange-100 bg-orange-50/50",
+  },
+  {
+    name: "Tianji",
+    description: "天机不可泄露，探寻未知的奥秘与可能。",
+    githubUrl: "https://github.com/DanZai233/Tianji",
+    demoUrl: "https://tianji.danzaii.cn",
+    tags: ["Mystery", "Exploration", "Discovery"],
+    color: "text-lime-600 border-lime-100 bg-lime-50/50",
   }
 ];
 
