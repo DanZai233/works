@@ -25,17 +25,37 @@ export default function ParticleBackground() {
     let animationFrameId: number;
     let particles: Particle[] = [];
 
-    const colors = [
-      "rgba(255, 183, 197, 0.6)", // Soft pink
-      "rgba(255, 218, 224, 0.6)", // Lighter pink
-      "rgba(255, 240, 245, 0.6)", // Lavender blush
-      "rgba(240, 230, 220, 0.5)", // Warm dust
-    ];
+    const getColors = () => {
+      const isDark = document.documentElement.dataset.scheme === "dark";
+      if (isDark) {
+        return [
+          "rgba(244, 143, 177, 0.4)", // Darker pink
+          "rgba(251, 113, 133, 0.4)", // Rose
+          "rgba(232, 121, 249, 0.4)", // Purple
+          "rgba(167, 139, 250, 0.4)", // Light purple
+        ];
+      }
+      return [
+        "rgba(255, 183, 197, 0.6)", // Soft pink
+        "rgba(255, 218, 224, 0.6)", // Lighter pink
+        "rgba(255, 240, 245, 0.6)", // Lavender blush
+        "rgba(240, 230, 220, 0.5)", // Warm dust
+      ];
+    };
+
+    let colors = getColors();
 
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       initParticles();
+    };
+
+    const updateColors = () => {
+      colors = getColors();
+      particles.forEach(p => {
+        p.color = colors[Math.floor(Math.random() * colors.length)];
+      });
     };
 
     const initParticles = () => {
@@ -97,11 +117,26 @@ export default function ParticleBackground() {
     };
 
     window.addEventListener("resize", resize);
+    window.addEventListener("storage", () => {
+      updateColors();
+    });
+    
+    // Watch for theme changes
+    const observer = new MutationObserver(() => {
+      updateColors();
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-scheme"],
+    });
+    
     resize();
     drawParticles();
 
     return () => {
       window.removeEventListener("resize", resize);
+      window.removeEventListener("storage", updateColors);
+      observer.disconnect();
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
