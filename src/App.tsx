@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Github, BookOpen, Mail, Heart } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import ParticleBackground from "./components/ParticleBackground";
 import ProjectCard from "./components/ProjectCard";
 import ThemeToggle from "./components/ThemeToggle";
@@ -167,6 +168,9 @@ export default function App() {
       {/* Decorative background elements */}
       <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-rose-100/30 blur-[120px] pointer-events-none z-0 dark:bg-rose-900/20" />
       <div className="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-orange-100/30 blur-[120px] pointer-events-none z-0 dark:bg-orange-900/20" />
+      
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
