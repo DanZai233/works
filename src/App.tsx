@@ -7,6 +7,14 @@ import ThemeToggle from "./components/ThemeToggle";
 
 const projects = [
   {
+    name: "GENSO-GEO",
+    description: "东方 Project 风格的地缘幻想命名工具，从现实地图和角色设定生成三语名帖、二つ名与符卡式由来。",
+    githubUrl: "https://github.com/DanZai233/GENSO-GEO",
+    demoUrl: "https://genso-geo.danzaii.cn",
+    tags: ["AI", "Map", "Touhou"],
+    color: "text-rose-700 border-rose-100 bg-rose-50/50",
+  },
+  {
     name: "MYGallery",
     description: "一个简约、美观、功能完整的个人照片墙系统，人人都可以自部署自己的照片展示空间。",
     githubUrl: "https://github.com/DanZai233/MYGallery",
