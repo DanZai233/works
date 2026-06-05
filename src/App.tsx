@@ -15,6 +15,21 @@ const projects = [
     color: "text-rose-700 border-rose-100 bg-rose-50/50",
   },
   {
+    name: "面了么 Mianleme",
+    description: "面试日程管理工具，支持 AI 识别邀约、日历导入、冲突提醒、准备清单、iOS 小组件和 Live Activity。",
+    githubUrl: "https://github.com/DanZai233/mianleme",
+    demoUrl: "https://mianleme.vercel.app",
+    tags: ["AI", "Interview", "iOS"],
+    color: "text-blue-600 border-blue-100 bg-blue-50/50",
+  },
+  {
+    name: "中之我 Inside-ME",
+    description: "本地优先的自我蒸馏工具，导入聊天记录，与过去的自己深谈。",
+    githubUrl: "https://github.com/DanZai233/Inside-ME",
+    tags: ["AI", "Memory", "Local-first"],
+    color: "text-violet-600 border-violet-100 bg-violet-50/50",
+  },
+  {
     name: "MYGallery",
     description: "一个简约、美观、功能完整的个人照片墙系统，人人都可以自部署自己的照片展示空间。",
     githubUrl: "https://github.com/DanZai233/MYGallery",

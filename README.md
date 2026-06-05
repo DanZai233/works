@@ -67,6 +67,8 @@ npm run preview
 网站展示了以下开源项目：
 
 - **GENSO-GEO**: 东方 Project 风格地缘幻想命名工具
+- **面了么 Mianleme**: 面试日程管理工具
+- **中之我 Inside-ME**: 本地优先的自我蒸馏工具
 - **MYGallery**: 个人照片墙系统
 - **Aim Trainer Pro (AIMBOT)**: 瞄准训练器
 - **MoodCard**: 心情卡片记录工具
