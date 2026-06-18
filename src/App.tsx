@@ -7,6 +7,14 @@ import ThemeToggle from "./components/ThemeToggle";
 
 const projects = [
   {
+    name: "一言 PRO (Hitokoto)",
+    description: "极简随机短句站点，收录 8000+ 条短句，支持分类句库、开放 API、海报生成和沉浸式阅读。",
+    githubUrl: "https://github.com/DanZai233/Hitokoto",
+    demoUrl: "https://hitokoto-omega.vercel.app",
+    tags: ["Quote", "API", "Vercel"],
+    color: "text-pink-600 border-pink-100 bg-pink-50/50",
+  },
+  {
     name: "GENSO-GEO",
     description: "东方 Project 风格的地缘幻想命名工具，从现实地图和角色设定生成三语名帖、二つ名与符卡式由来。",
     githubUrl: "https://github.com/DanZai233/GENSO-GEO",

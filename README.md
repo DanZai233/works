@@ -66,6 +66,7 @@ npm run preview
 
 网站展示了以下开源项目：
 
+- **一言 PRO (Hitokoto)**: 极简随机短句站点与开放 API
 - **GENSO-GEO**: 东方 Project 风格地缘幻想命名工具
 - **面了么 Mianleme**: 面试日程管理工具
 - **中之我 Inside-ME**: 本地优先的自我蒸馏工具
